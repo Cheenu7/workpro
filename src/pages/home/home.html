@@ -1,0 +1,59 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>login</ion-title>
+      </ion-navbar>
+
+</ion-header>
+
+<ion-content padding text-center>
+    <br/>
+    <br/>
+    <br/>
+  
+  <div class="logo-style">
+    
+    <img  src="assets/imgs/icon.png" >
+  </div>
+    <br/>
+    <br/>
+  
+    <ion-list >
+  
+  <ion-item class="box-style">  
+    <ion-label floating>Email id</ion-label>
+    <ion-input type="text" value={{email}} [(ngModel)]="email"></ion-input>
+  </ion-item> <br/>
+  
+  <ion-item class="box-style">
+      <ion-label floating>Password</ion-label>
+      <ion-input type="password" value={{password}} [(ngModel)]="password"></ion-input>
+    </ion-item> <br/>
+
+    
+    <div float-left class="my-checkbox">
+        <ion-checkbox color="primary" [(ngModel)]="svpswd">
+          </ion-checkbox>
+        <ion-label>Remember me?</ion-label>
+      </div>
+    <br/>
+  
+    <button ion-button class="button-style" full color="secondary" (click)="login()">Log In</button>
+    <button ion-button class="button-style2" clear (click)="frgtpswd()">  Forgot Password ?</button>
+    <button ion-button class="button-style"  full color="strong" (click)="signup()">Sign Up</button> <br/>
+  
+    </ion-list>
+    
+    <div class="bottom-div">
+      <div  class="bottom-div1">
+  
+        <img src="assets/imgs/gplus.png"   >
+      </div>
+      <div class="bottom-div2">
+        <img src="assets/imgs/fb.png"  >
+      </div>
+    </div>
+    <button ion-button class="button-style2" clear (click)="maps()">  maps</button>
+    <button ion-button class="button-style2" clear (click)="sample()">  sample</button>
+   
+  </ion-content>
+  

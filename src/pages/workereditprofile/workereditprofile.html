@@ -1,0 +1,63 @@
+<!--
+  Generated template for the WorkereditprofilePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>Profile</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+    <img src="./assets/imgs/logo.png" alt="Avatar" style="display: block; height: 20;width: 20;"/>
+    <!-- <ion-buttons end>
+      <button *ngIf=true ion-button icon-only (click)="edit()">
+        <ion-icon id="create" name="create"></ion-icon>{{val2}}
+      </button>
+  </ion-buttons> -->
+    <ion-list>
+
+        <ion-item id="prof">
+          <ion-label stacked>Username</ion-label>
+          <ion-input type="text" value="{{name}}"></ion-input>
+        </ion-item>
+      
+        <ion-item id="prof">
+          <ion-label stacked>Email</ion-label>
+          <ion-input type="Email" value="{{email}}"></ion-input>
+        </ion-item>
+
+        <ion-item id="prof">
+            <ion-label stacked>Mobile</ion-label>
+            <ion-input type="tel" value="{{work}}"></ion-input>
+          </ion-item>
+
+        <ion-item>
+          <ion-label>Date of Birth</ion-label>
+          <ion-datetime displayFormat="DD/MM/YYYY" value="ss" [(ngModel)]="myDate"></ion-datetime>
+        </ion-item>
+        
+        <ion-item id="prof">
+          <ion-label>service</ion-label>
+          <ion-select [(ngModel)] ="servi">
+            <ion-option value="electrician">electrician</ion-option>
+            <ion-option value="plumber">plumber</ion-option>
+            <ion-option value="painter">painter</ion-option>
+            <ion-option value="mechanic">mechanic</ion-option>
+            <ion-option value="carpenter">carpenter</ion-option>
+          </ion-select>
+          </ion-item>
+
+          <ion-item id="prof">
+            <ion-label stacked>Address</ion-label>
+            <ion-textarea></ion-textarea>
+          </ion-item>
+      </ion-list> 
+
+</ion-content>

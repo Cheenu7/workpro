@@ -1,0 +1,41 @@
+<!--
+  Generated template for the ApplyleavePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>apply leave</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding class="aaa">
+
+    <ion-item >
+      <ion-label large center color="secondary" class="custom-here">**Apply Leave**</ion-label>
+    </ion-item>
+      <ion-item>
+          <ion-label>Start date and time of leave</ion-label>
+          <ion-datetime placeholder="Enter date here..." displayFormat="D MMM YYYY H:mm" min="2019" max="2019" value="2005-06-17T11:06Z"></ion-datetime>
+        </ion-item>
+  
+        <ion-item>
+            <ion-label>End date and time of leave</ion-label>
+            <ion-datetime placeholder="Enter date here.." displayFormat="D MMM YYYY H:mm" min="2019" max="2019" value="2005-06-17T11:06Z"></ion-datetime>
+          </ion-item>
+        
+          <ion-item>
+              <ion-label>Reason</ion-label>
+              <ion-textarea rows="7" cols="15" placeholder="Enter reason here..."></ion-textarea>
+            </ion-item>
+  
+            <div padding>
+                <button ion-button type="button" color="brown" full large center  outline (click)="presentToast()">Submit
+                </button>
+        </div>
+  
+  
+  </ion-content>

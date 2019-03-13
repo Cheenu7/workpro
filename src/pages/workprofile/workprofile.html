@@ -1,0 +1,46 @@
+<!--
+  Generated template for the WorkprofilePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>More about you</ion-title>
+  </ion-navbar>
+
+
+</ion-header>
+
+<ion-content padding>
+    <!-- <img src="./assets/imgs/prof.png" alt="Avatar" style="display: block; margin: auto;"/> -->
+    <button ion-button color="primary" (click)="presentActionSheet()">uploadphoto</button>
+    <img src="{{targetPath}}" style="width: 100%" [hidden]="lastImage === null">
+    <ion-list>
+
+        <ion-item>
+          <ion-label>Date of Birth</ion-label>
+          <ion-datetime displayFormat="DD/MM/YYYY" [(ngModel)]="myDate"></ion-datetime>
+        </ion-item>
+        
+        <ion-item id="prof">
+          <ion-label>service</ion-label>
+          <ion-select [(ngModel)] ="service">
+            <ion-option value="electrician">electrician</ion-option>
+            <ion-option value="plumber">plumber</ion-option>
+            <ion-option value="painter">painter</ion-option>
+            <ion-option value="mechanic">mechanic</ion-option>
+            <ion-option value="carpenter">carpenter</ion-option>
+          </ion-select>
+          </ion-item>
+
+          <ion-item id="prof">
+            <ion-label stacked>Address</ion-label>
+            <ion-textarea [(ngModel)] ="address"></ion-textarea>
+          </ion-item>
+          
+      </ion-list> 
+      <button ion-button (click)="save()">Save details</button>
+      <button ion-button icon-left (click)="uploadImage()" [disabled]="lastImage === null">uploadImage</button>
+</ion-content>

@@ -1,0 +1,52 @@
+page-u-dashboard {
+    .aaa {
+        background-image: url('../assets/imgs/bcg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      ion-slide.swiper-slide {
+        //left: 2%;
+    }
+    
+    .slide-zoom {
+        background: #e6e6e6;
+    }
+ 
+    .thumb-img {
+        padding: 10px;
+    }
+    .d
+    {
+        align-content: flex-start;
+    }
+    .wrapper {
+        display: grid;
+       grid-template-columns: repeat(3, 1fr);
+       // column-gap: 10px;
+        //row-gap: 1em;
+      }
+      * {box-sizing: border-box;}
+      
+      .wrapper {
+        // grid-column-gap: 10px;
+        // grid-row-gap: 1em;
+      
+        border: 2px solid #572405;
+        border-radius: 5px;
+      background-color:white;
+      }
+      
+      .wrapper > div {
+        border: 1px solid #0a0a0a;
+        border-radius: 0px;
+       
+  
+        //background-color: #ee150e;
+       padding: 0.5em;
+        color: #000000;
+       
+      }
+    .c{
+        text-align: center;
+    }
+}

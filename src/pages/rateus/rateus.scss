@@ -1,0 +1,29 @@
+page-rateus {
+    ul {
+        padding: 10px;
+  
+        &.rating li {
+          padding: 5px 10px !important;
+          background: none;
+          color: #ffb400;
+  
+          ion-icon {
+            font-size: 40px;
+          }
+        }
+      }
+  
+      .a
+      {
+          background-image: url('/assets/imgs/d.jpg');
+          background-size:  cover;
+          background-repeat: no-repeat;
+          background-position: bottom;
+          
+      }
+      .ac
+	   {
+       text-align: center;
+      }
+
+}

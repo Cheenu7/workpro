@@ -1,0 +1,69 @@
+<!--
+  Generated template for the ChooselocationPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Choose Location</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="chose_location">
+<br>
+<br>
+  <h2>Where do you want work?</h2>
+  <br>
+   <br>
+    <ion-card>
+        <ion-list>
+      <button ion-item>
+      <h2><b>At Current Location</b></h2>
+      <ion-img src="../assets/imgs/locsym.jpg" item-start height='50' width='50' ></ion-img>
+      
+      </button>
+        </ion-list>
+        </ion-card>
+
+
+       <br>
+       <br>
+       <br> 
+        <ion-card>
+            <ion-list>
+          <button ion-item (click)="changestatus()">
+          <h2> <b>At Some Other Location</b></h2>
+          <ion-img src="../assets/imgs/locsym.jpg" item-start height='50' width='50' ></ion-img>
+          </button>
+            </ion-list>
+         </ion-card>
+  
+    <div *ngIf="status"> 
+          <ion-list>
+              <ion-list-header>Select Your Area</ion-list-header>  
+              <ion-item>
+                <ion-label>States</ion-label>
+                <ion-select placeholder="Select tate" #newSelect [(ngModel)]="statecodes" (ionChange)="onChange(statecodes)">
+                  <ion-option value="1">Punjab</ion-option>
+                  <ion-option value="2">Chhattisgarh</ion-option>
+                  <ion-option value="3">Andhrapradesh</ion-option>
+                </ion-select>
+              </ion-item>
+     
+              <ion-item>
+                  <ion-label>City</ion-label>
+                  <ion-select (ionChange)="onCitySelection(citycode)" [(ngModel)]="citycode">
+                    <ion-option *ngFor="let cities of cityList" [value]="cities"  >{{ cities }}</ion-option>
+                  </ion-select>
+             </ion-item>
+
+             <button ion-button full (click)="SubmitAddress()">Submit</button>
+        
+           </ion-list>
+      </div>
+
+</ion-content>
